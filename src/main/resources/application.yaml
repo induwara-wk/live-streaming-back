@@ -12,7 +12,15 @@ spring:
       ddl-auto: update
     show-sql: true
 
+server:
+  port: 8080
+
 livekit:
   api:
     key: devkey
     secret: secret
+
+app:
+  jwt:
+    secret: MyDefaultSuperSecretKeyThatIsAtLeast256BitsLong!!
+    expiration-ms: 86400000
